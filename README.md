@@ -4,31 +4,33 @@ Programme intuitif ayant pour but d'informer les propriétaires et professionnel
 
 ## Le programme
 ### Public cible
-Ce programme est conçu pour les
-- architectes
-- propriétaires
-- maîtres d'ouvrage
-- ingénieurs
-- tout autre personne concernée par un projet de rénovation immobilier
+Ce programme est conçu pour les :
+1. architectes
+2. propriétaires
+3. maîtres d'ouvrage
+4. ingénieurs
+5. tout autre personne concernée par un projet de rénovation immobilier
 
 ### But
 Le but de ce programme est de proposer une interface intuitive pour établir aussi clairement que possible les exigences rattachées à un projet de rénovation en fonction de ses spécificités.
 
 ## Code source
+### Langue de travail ###
+Le code, ainsi que sa documentation doivent être écrits en anglais. Cela permet de ne pas fermer la porte à des contributeurs non-francophones. Le readme et l'interface du programme est en français, puisque le public concercné est essentiellement vaudois. Le programme à vocation à s'étendre à d'autres Cantons. Il sera traduit en allemand et italien le cas échéant.
 ### Arborescence des fichiers
 Le projet aurait 2 principaux répertoires de code :
-- questionnaire
-  - reçoit des données de l'utilisateur·rice
-  - interagit directement en affichant des messages et avertissements en fonction des entrées
-  - permet de sauvegarder les données entrées pour éditer le questionnaire plus tard ou les transmettre à un·e autre utilisateur·rice
-- rédacteur
-  - utilise les données du questionnaire pour générer un rapport décrivant les exigences énergétiques du projet de rénovation
+1. le questionnaire
+    - reçoit des données de l'utilisateur·rice
+    - interagit directement en affichant des messages et avertissements en fonction des entrées
+    - permet de sauvegarder les données entrées pour éditer le questionnaire plus tard ou les transmettre à un·e autre utilisateur·rice
+2. le rédacteur
+    - utilise les données du questionnaire pour générer un rapport décrivant les exigences énergétiques du projet de rénovation
 
 ### Bibliothèques et outils utilisés
-- Commandes de compilation : [**CMake**] (https://cmake.org/)
-- Fenêtres : [**Qt**] (https://www.qt.io/)
+- Commandes de compilation : [**CMake**](https://cmake.org/)
+- Fenêtres : [**Qt**](https://www.qt.io/)
 - Documentation du code : [**doxygen**](https://doxygen.nl/)
-- Tests unitaires : [**Catch2**] (https://github.com/catchorg/Catch2)
+- Tests unitaires : [**Catch2**](https://github.com/catchorg/Catch2)
 
 D'autres bibliothèques ou outils pourraient s'avérer utiles en cours de développement.
 
