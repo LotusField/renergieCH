@@ -14,7 +14,7 @@ Ce programme est conçu pour les
 ### But
 Le but de ce programme est de proposer une interface intuitive pour établir aussi clairement que possible les exigences rattachées à un projet de rénovation en fonction de ses spécificités.
 
-## Le projet de développement
+## Code source
 ### Arborescence des fichiers
 Le projet aurait 4 principaux répertoires de code :
 - préprocesseur
