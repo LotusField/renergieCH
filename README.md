@@ -16,36 +16,29 @@ Le but de ce programme est de proposer une interface intuitive pour établir aus
 
 ## Code source
 ### Arborescence des fichiers
-Le projet aurait 4 principaux répertoires de code :
-- préprocesseur
-
-- reçoit des entrées de l'utilisateur et génère une entrée pour le solveur
-
-- permet de sauvegarder l'entrée pour la récupérer plus tard
-- solveur
-- utilise les arguments créés par le préprocesseur
-
-- post-traitement
-
-- permet d'imprimer, d'afficher et de sauvegarder les résultats
-- interface graphique
-- interface graphique pour le pré-processeur, le solveur et le post-processeur
+Le projet aurait 2 principaux répertoires de code :
+- questionnaire
+  - reçoit des données de l'utilisateur·rice
+  - interagit directement en affichant des messages et avertissements en fonction des entrées
+  - permet de sauvegarder les données entrées pour éditer le questionnaire plus tard ou les transmettre à un·e autre utilisateur·rice
+- rédacteur
+  - utilise les données du questionnaire pour générer un rapport décrivant les exigences énergétiques du projet de rénovation
 
 ### Bibliothèques et outils utilisés
 - Commandes de compilation : [**CMake**] (https://cmake.org/)
-- Windows : [**Qt**] (https://www.qt.io/)
-- Graphiques : [**OpenGL**] (https://www.opengl.org/)
+- Fenêtres : [**Qt**] (https://www.qt.io/)
 - Documentation du code : [**doxygen**](https://doxygen.nl/)
-- Algèbre linéaire : [**Eigen**](https://eigen.tuxfamily.org/)
 - Tests unitaires : [**Catch2**] (https://github.com/catchorg/Catch2)
+
+D'autres bibliothèques ou outils pourraient s'avérer utiles en cours de développement.
 
 ## Comment compiler le projet et les fichiers associés
 ### Acquisition des fichiers
 #### Pour les non-collaborateurs
-Il suffit de forker le dépôt sur votre propre GitHub. Vous pouvez alors travailler sur cette version forkée. Une fois que les modifications sur le dépôt forké sont toutes poussées, vous pouvez effectuer une pull request vers le dépôt original, que les administrateurs examineront.
+Il suffit de cloner le dépôt sur votre propre GitHub. Vous pouvez alors travailler sur cette version clonée. Une fois que les modifications sur le dépôt cloné ont toutes été commit, vous pouvez effectuer une pull request vers le dépôt original, que les administrateurs examineront.
 #### Pour les collaborateurs
 1. Vous pouvez utiliser la méthode décrite ci-dessus pour les non-collaborateurs.
-2. Vous pouvez créer une branche personnelle dans laquelle vous apportez vos modifications. Une fois les modifications effectuées, vous pouvez faire une demande de tirage pour fusionner avec la branche parente. Assurez-vous de créer une branche par sujet de modification. Évitez d'utiliser une seule branche pour des modifications qui ne sont pas liées entre elles. De plus, nommez-le de manière à ce que nous comprenions de quoi il s'agit. Par exemple, `preprocessor-grid` traiterait spécifiquement de la classe `Grid` du `preprocessor`, tandis que `preprocessor-general` serait plus général par nature.
+2. Vous pouvez créer une branche personnelle dans laquelle vous apportez vos modifications. Une fois les modifications effectuées, vous pouvez faire une pull request pour fusionner avec la branche parente. Assurez-vous de créer une branche par sujet de modification. Évitez d'utiliser une seule branche pour des modifications qui n'ont pas de lien. De plus, nommez-la de manière à ce que nous comprenions de quoi il s'agit. Par exemple, `repertoire-Classe` traiterait spécifiquement de la classe `Classe` de `repertoire`, tandis que `repertoire-general` serait plus général par nature. Naturellement, `repertoire` et `Classe` sont ici des noms génériques. Ils doivent être remplacés par de noms spécifiques, propres à ce que vous modifiez.
 
 ### Acquisition des bibliothèques requises
 Avant de compiler le projet, vous devez avoir installé sur votre ordinateur
