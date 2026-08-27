@@ -46,18 +46,16 @@ Avant de compiler le projet, vous devez avoir installé sur votre ordinateur
 2. doxygen
 3. Qt Creator
 
-En général, l'installateur de Qt Creator a l'option d'installer également OpenGL. Si vous n'installez pas OpenGL de cette manière, assurez-vous de l'avoir installé séparément.
-
 Les bibliothèques C++ seront acquises au moment de la compilation en suivant les instructions du fichier `CMakeLists.txt`.
 
 ### Compilation du projet
 Le projet est compilé en utilisant CMake et les instructions contenues dans `CMakeLists.txt`. Vous pouvez soit le compiler en utilisant l'interface graphique de Qt Creator, soit en utilisant des commandes dans le terminal.
 #### Utilisation de l'interface graphique de Qt Creator
 1. Pour compiler le projet, ouvrez-le dans Qt Creator.
-2. Une fois ouvert, allez dans "Compiler" dans le ruban supérieur, puis "Compiler le projet muri". Sur Windows, le raccourci est Ctrl+B.
+2. Une fois ouvert, allez dans "Compiler" dans le ruban supérieur, puis "Compiler le projet renergieCH". Sur Windows, le raccourci est Ctrl+B.
 3. Une fois compilé, le projet peut être exécuté en utilisant "Exécuter" dans le même menu. Sous Windows, le raccourci est Ctrl+R.
 
-La fenêtre principale doit s'ouvrir et afficher un résultat similaire à la figure ci-dessous.
+La fenêtre principale doit s'ouvrir et afficher un résultat similaire à la figure ci-dessous (à venir).
 
 ![Capture d'écran de la fenêtre principale](assets/mainwindow. PNG "Fenêtre principale")
 
@@ -79,6 +77,7 @@ Allez dans le dossier `html` à la racine de ce dépôt et ouvrez le fichier `in
 ## Comment contribuer
 Il existe de nombreuses façons de contribuer à ce projet :
 - Écrire du code
+- Numériser des textes de lois dans des tableurs csv
 - Réviser le code et suggérer des modifications/améliorations
 - Créer des tests unitaires et les exécuter
 - Rédiger et affiner la documentation
