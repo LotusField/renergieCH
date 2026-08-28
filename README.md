@@ -85,4 +85,4 @@ Il existe de nombreuses façons de contribuer à ce projet :
 - Rédiger et affiner la documentation
 - Fournir des illustrations pour le logiciel
 
-N'hésitez pas à nous contacter si vous souhaitez contribuer d'une manière différente de celles mentionnées ci-dessus.
+Pour de plus amples informations, merci de consulter le [wiki](https://github.com/LotusField/renergieCH/wiki). N'hésitez pas à nous contacter si vous souhaitez contribuer d'une manière différente de celles mentionnées ci-dessus.
