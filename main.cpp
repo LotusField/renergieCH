@@ -17,7 +17,8 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    MainWindow w;
+    FormDataContainer fdc;
+    MainWindow w(fdc);
     w.show();
     return a.exec();
 }

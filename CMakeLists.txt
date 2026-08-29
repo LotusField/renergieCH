@@ -28,9 +28,15 @@ qt_add_executable(${PROJECT_NAME}
     src/mainwindow.cpp
 
     src/mainwindow.ui
+
+    form/include/formdatacontainer.h
+    form/src/formdatacontainer.cpp
 )
 
 qt_add_executable(tests
+    form/include/formdatacontainer.h
+    form/src/formdatacontainer.cpp
+    form/test/formdatacontainer_test.cpp
 )
 
 # define where the headers are
