@@ -5,11 +5,17 @@
 class FormDataContainer
 {
 public:
-    //! Default MainWindow constructor
+    //! Default FormDataContainer constructor
     FormDataContainer();
 
+    //! Gets transformation value
     bool isTransformation();
 
+    //! Sets transformation value
+    /*!
+    Takes the new state as parameters.
+        \param value whether the project is a transformation.
+    */
     void setTransformation(bool value);
 
 private:
