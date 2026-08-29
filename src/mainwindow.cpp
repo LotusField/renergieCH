@@ -7,9 +7,10 @@
 #include <QDesktopServices>
 #include <QUrl>
 
-MainWindow::MainWindow(QWidget *parent)
+MainWindow::MainWindow(FormDataContainer& fdc, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , fdc(fdc)
 {
     ui->setupUi(this);
 
@@ -46,4 +47,12 @@ void MainWindow::on_actionRepository_triggered()
     QDesktopServices::openUrl(
         QUrl("https://github.com/LotusField/renergieCH")
         );
+}
+
+void MainWindow::on_checkBoxTransformation_toggled(bool checked)
+{
+    qDebug() << "on_checkBoxTransformation_toggled received " << checked;
+    qDebug() << "on_checkBoxTransformation_toggled initial state " << fdc.isTransformation();
+    fdc.setTransformation(checked);
+    qDebug() << "on_checkBoxTransformation_toggled final state " << fdc.isTransformation();
 }

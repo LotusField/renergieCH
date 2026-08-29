@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include <formdatacontainer.h>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -19,7 +21,7 @@ public:
     Takes a pointer to a parent class as parameter.
         \param *parent the pointer to the parent class.
     */
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(FormDataContainer& fdc, QWidget *parent = nullptr);
 
     //! Destructor
     ~MainWindow();
@@ -36,7 +38,11 @@ private slots:
     //! Responds to the trigger by opening the repository url in a web browser.
     void on_actionRepository_triggered();
 
+    void on_checkBoxTransformation_toggled(bool checked);
+
 private:
     Ui::MainWindow *ui;
+
+    FormDataContainer& fdc;
 };
 #endif // MAINWINDOW_H

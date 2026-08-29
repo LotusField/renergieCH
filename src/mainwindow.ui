@@ -23,7 +23,7 @@
    </size>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="checkBoxTransformation">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -39,7 +39,7 @@
      <string>Transformation</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_2">
+   <widget class="QCheckBox" name="checkBoxAffectationChange">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -55,7 +55,7 @@
      <string>Changement d'affectation</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_3">
+   <widget class="QCheckBox" name="checkBoxExtension">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -68,10 +68,10 @@
      <set>Qt::InputMethodHint::ImhNone</set>
     </property>
     <property name="text">
-     <string>Changement d'affectation</string>
+     <string>Surélévation ou extension</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_4">
+   <widget class="QCheckBox" name="checkBoxTechnichalInstallationWork">
     <property name="geometry">
      <rect>
       <x>20</x>
