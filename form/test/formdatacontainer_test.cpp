@@ -54,6 +54,13 @@ TEST_CASE("FormDataContainer::DataEntryList serialise() const;", "[FormDataConta
     dp.save("TEST_CASE_SAVE.csv");
     CHECK(std::filesystem::exists("TEST_CASE_SAVE.csv"));
 
+    FormDataContainer fdc2;
+    fdc2.setTransformation(false);
+    DataPersister dp2(fdc2);
+    CHECK(fdc2.isTransformation()==false);
+    dp2.load("TEST_CASE_SAVE.csv");
+    CHECK(fdc2.isTransformation());
+
     //Need to test loading a csv into a FormDataContainer
 }
 
