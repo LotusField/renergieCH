@@ -29,13 +29,22 @@ qt_add_executable(${PROJECT_NAME}
 
     src/mainwindow.ui
 
-    form/include/formdatacontainer.h
-    form/src/formdatacontainer.cpp
+    form/include/formdatacontainer.h form/src/formdatacontainer.cpp
+    form/include/datapersister.h form/src/datapersister.cpp
+    form/include/dataentrylist.h form/src/dataentrylist.cpp
+    include/gvar.h
 )
 
 qt_add_executable(tests
-    form/include/formdatacontainer.h
-    form/src/formdatacontainer.cpp
+
+    form/include/formdatacontainer.h form/src/formdatacontainer.cpp
+
+    form/include/datapersister.h form/src/datapersister.cpp
+
+    form/include/dataentrylist.h form/src/dataentrylist.cpp
+
+    include/gvar.h
+
     form/test/formdatacontainer_test.cpp
 )
 
