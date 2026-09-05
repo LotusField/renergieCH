@@ -38,11 +38,17 @@ private slots:
     //! Responds to the trigger by opening the repository url in a web browser.
     void on_actionRepository_triggered();
 
+    //! Responds to the trigger by setting the value of the fdc private attribute.
+    /*!
+    Takes a boolean for the check boxas paramter.
+        \param checked the status of the check box.
+    */
     void on_checkBoxTransformation_toggled(bool checked);
 
 private:
     Ui::MainWindow *ui;
 
+    //! Reference to the FormDataContainer that holds answers to the form from the user.
     FormDataContainer& fdc;
 };
 #endif // MAINWINDOW_H

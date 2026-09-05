@@ -26,6 +26,7 @@ public:
     void deserialise(DataEntryList const& del);
 
 private:
+    //! Whether the project corresponds to a transformation
     bool transformation;
 
 };
