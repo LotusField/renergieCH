@@ -7,15 +7,24 @@
 #include <QDesktopServices>
 #include <QUrl>
 
-MainWindow::MainWindow(FormDataContainer& fdc, QWidget *parent)
+MainWindow::MainWindow(FormDataContainer& fdc, DataPersister& dp, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , fdc(fdc)
+    , dp(dp)
 {
     ui->setupUi(this);
 
     connect(ui->actionQuit, &QAction::triggered,
             this, &MainWindow::close);
+
+    connect(&dp,
+            &DataPersister::dataLoaded,
+            this,
+            &MainWindow::updateForm);
+
+
+    updateForm();
 }
 
 MainWindow::~MainWindow()
@@ -55,4 +64,16 @@ void MainWindow::on_checkBoxTransformation_toggled(bool checked)
     qDebug() << "on_checkBoxTransformation_toggled initial state " << fdc.isTransformation();
     fdc.setTransformation(checked);
     qDebug() << "on_checkBoxTransformation_toggled final state " << fdc.isTransformation();
+}
+
+void MainWindow::updateForm()
+{
+    ui->checkBoxTransformation->setChecked(
+        fdc.isTransformation()
+        );
+
+    // Future:
+    // ui->checkBoxWhatever->setChecked(fdc.isWhatever());
+    // ui->spinBoxWhatever->setValue(fdc.whatever());
+    // ...
 }

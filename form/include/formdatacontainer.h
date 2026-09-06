@@ -7,7 +7,7 @@ class FormDataContainer
 {
 public:
     //! Default FormDataContainer constructor
-    FormDataContainer();
+    explicit FormDataContainer();
 
     //! Gets transformation value
     bool isTransformation() const;

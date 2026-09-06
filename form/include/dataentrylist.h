@@ -19,7 +19,7 @@ class DataEntryList
 {
 public:
     //! Default DataentryList constructor.
-    DataEntryList();
+    explicit DataEntryList();
 
     //! Gets the value corresponding to a specific alias.
     /*!

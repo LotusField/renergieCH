@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iostream>
 
-DataPersister::DataPersister(FormDataContainer& fdc)
+DataPersister::DataPersister(FormDataContainer& fdc, QObject* parent)
     :fdc(fdc)
 {}
 
@@ -38,6 +38,8 @@ void DataPersister::load(std::string const& path)
     file.close();
 
     fdc.deserialise(del);
+
+    emit dataLoaded();
 }
 
 void DataPersister::save(std::string const& path) const
