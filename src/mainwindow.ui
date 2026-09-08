@@ -36,7 +36,7 @@
      <set>Qt::InputMethodHint::ImhNone</set>
     </property>
     <property name="text">
-     <string>Transformation</string>
+     <string>Rénovation de l'enveloppe thermique</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="checkBoxAffectationChange">

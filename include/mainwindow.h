@@ -48,6 +48,10 @@ private slots:
     */
     void on_checkBoxTransformation_toggled(bool checked);
 
+    void on_actionSaveAs_triggered();
+
+    void on_actionOpen_triggered();
+
 private:
     //! Updates the ui with respect to the content of the DataFormContainer
     void updateForm();
@@ -58,5 +62,8 @@ private:
     FormDataContainer& fdc;
 
     DataPersister& dp;
+
+    //! Stores the file types to filter for the save/open dialog menu
+    QString saveFileTypes;
 };
 #endif // MAINWINDOW_H
