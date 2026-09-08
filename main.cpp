@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
         }
     }
     FormDataContainer fdc;
-    MainWindow w(fdc);
+    DataPersister dp(fdc);
+    MainWindow w(fdc, dp);
     w.show();
     return a.exec();
 }

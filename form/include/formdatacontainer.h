@@ -1,15 +1,16 @@
 #ifndef FORMDATACONTAINER_H
 #define FORMDATACONTAINER_H
 
+#include "dataentrylist.h"
 
 class FormDataContainer
 {
 public:
     //! Default FormDataContainer constructor
-    FormDataContainer();
+    explicit FormDataContainer();
 
     //! Gets transformation value
-    bool isTransformation();
+    bool isTransformation() const;
 
     //! Sets transformation value
     /*!
@@ -18,8 +19,16 @@ public:
     */
     void setTransformation(bool value);
 
+    //! Serialise the input data in the form to generic strings in preparation for the data persister to store them in a file
+    DataEntryList serialise() const;
+
+    //! Deserialise the loaded strings data by the data persister to the correct form data container class attribute
+    void deserialise(DataEntryList const& del);
+
 private:
+    //! Whether the project corresponds to a transformation
     bool transformation;
+
 };
 
 #endif // FORMDATACONTAINER_H

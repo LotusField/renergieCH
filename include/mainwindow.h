@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 #include <formdatacontainer.h>
+#include <datapersister.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,8 +21,10 @@ public:
     /*!
     Takes a pointer to a parent class as parameter.
         \param *parent the pointer to the parent class.
+        \param fdc reference to the form data container that holds the input data from the user
+        \param reference to the data persister used to save and load data to the form data container
     */
-    MainWindow(FormDataContainer& fdc, QWidget *parent = nullptr);
+    MainWindow(FormDataContainer& fdc, DataPersister& dp, QWidget *parent = nullptr);
 
     //! Destructor
     ~MainWindow();
@@ -38,11 +41,29 @@ private slots:
     //! Responds to the trigger by opening the repository url in a web browser.
     void on_actionRepository_triggered();
 
+    //! Responds to the trigger by setting the value of the fdc private attribute.
+    /*!
+    Takes a boolean for the check boxas paramter.
+        \param checked the status of the check box.
+    */
     void on_checkBoxTransformation_toggled(bool checked);
 
+    void on_actionSaveAs_triggered();
+
+    void on_actionOpen_triggered();
+
 private:
+    //! Updates the ui with respect to the content of the DataFormContainer
+    void updateForm();
+
     Ui::MainWindow *ui;
 
+    //! Reference to the FormDataContainer that holds answers to the form from the user.
     FormDataContainer& fdc;
+
+    DataPersister& dp;
+
+    //! Stores the file types to filter for the save/open dialog menu
+    QString saveFileTypes;
 };
 #endif // MAINWINDOW_H
