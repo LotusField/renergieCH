@@ -48,22 +48,26 @@ private slots:
     */
     void on_checkBoxTransformation_toggled(bool checked);
 
+    //! Responds to the trigger by launching the gui saving protocol.
     void on_actionSaveAs_triggered();
 
+    //! Responds to the trigger by launching the gui opening protocol.
     void on_actionOpen_triggered();
 
 private:
     //! Updates the ui with respect to the content of the DataFormContainer
     void updateForm();
 
+    //! pointer to the main window
     Ui::MainWindow *ui;
 
     //! Reference to the FormDataContainer that holds answers to the form from the user.
     FormDataContainer& fdc;
 
+    //! Reference to the data persister that manages file opening and data saving to the operating system
     DataPersister& dp;
 
     //! Stores the file types to filter for the save/open dialog menu
-    QString saveFileTypes;
+    QString& saveFileTypes;
 };
 #endif // MAINWINDOW_H

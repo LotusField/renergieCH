@@ -85,4 +85,6 @@ Il existe de nombreuses façons de contribuer à ce projet :
 - Rédiger et affiner la documentation
 - Fournir des illustrations pour le logiciel
 
+Les "issues" peuvent être consultées dans l'[onglet correspondant](https://github.com/LotusField/renergieCH/issues) du dépôt. La planification et les détails de ces "issues" peuvent être consultés dans le [projet de planification](https://github.com/users/LotusField/projects/2) du dépôt. En particulier, la [roadmap](https://github.com/users/LotusField/projects/2/views/4) permet de visualiser la planification sous forme de calendrier.
+
 Pour de plus amples informations, merci de consulter le [wiki](https://github.com/LotusField/renergieCH/wiki). N'hésitez pas à nous contacter si vous souhaitez contribuer d'une manière différente de celles mentionnées ci-dessus.
