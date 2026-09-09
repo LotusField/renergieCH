@@ -68,6 +68,6 @@ private:
     DataPersister& dp;
 
     //! Stores the file types to filter for the save/open dialog menu
-    QString& saveFileTypes;
+    QString saveFileTypes;
 };
 #endif // MAINWINDOW_H
