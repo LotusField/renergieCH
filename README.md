@@ -1,5 +1,5 @@
 # renergieCH
-Programme intuitif ayant pour but d'informer les propriétaires et professionnels sur les aspects énergétiques de leurs projets de rénovation
+Programme intuitif ayant pour but d'informer les propriétaires et professionnels sur les aspects énergétiques de leurs projets de rénovation. Plus les exigences sont connues tôt, plus il est possible de penser le projet autour de ces dernières et de gagner du temps.
 
 
 ## Le programme
